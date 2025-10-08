@@ -19,6 +19,11 @@ import midia7 from "@/assets/midia_7.jpg";
 import midia8 from "@/assets/midia_8.jpg";
 import midia9 from "@/assets/midia_9.jpg";
 import midia10 from "@/assets/midia_10.jpg";
+import midia11 from "@/assets/midia_11.jpg";
+import midia12 from "@/assets/midia_12.jpg";
+import midia13 from "@/assets/midia_13.jpg";
+import midia14 from "@/assets/midia_14.jpg";
+import midia15 from "@/assets/midia_15.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -34,6 +39,11 @@ const Gallery = () => {
     { src: midia8, alt: "Equipamentos e ferramentas técnicas" },
     { src: midia9, alt: "Técnico especializado em serviço" },
     { src: midia10, alt: "Oficina equipada para máquinas pesadas" },
+    { src: midia11, alt: "Manutenção técnica de componentes" },
+    { src: midia12, alt: "Frota de máquinas na oficina" },
+    { src: midia13, alt: "Atendimento em campo aberto" },
+    { src: midia14, alt: "Equipamentos de calibragem e teste" },
+    { src: midia15, alt: "Operação de máquinas pesadas Volvo" },
   ];
 
   return (
