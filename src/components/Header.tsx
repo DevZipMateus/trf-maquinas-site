@@ -29,7 +29,7 @@ const Header = () => {
     { id: "sobre", label: "Sobre" },
     { id: "servicos", label: "Serviços" },
     { id: "produtos", label: "Produtos" },
-    { id: "valores", label: "Valores" },
+    { id: "galeria", label: "Galeria" },
     { id: "contato", label: "Contato" },
   ];
 
