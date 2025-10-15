@@ -25,24 +25,24 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
-          <div className="text-background space-y-6 animate-fade-in bg-black/60 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+          <div className="text-background space-y-4 sm:space-y-6 animate-fade-in bg-black/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10">
             <div className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm px-4 py-2 rounded-full border border-background/20">
               <Wrench className="w-4 h-4" />
               <span className="text-sm font-medium">Assistência técnica especializada</span>
             </div>
             
-            <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-tight">
+            <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight">
               TRF MÁQUINAS PESADAS
             </h1>
             
-            <h2 className="text-xl md:text-2xl font-light text-background/90 leading-relaxed">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-light text-background/90 leading-relaxed">
               Atendimento personalizado e gestão completa para máquinas de construção civil e agrícolas em Rondônia
             </h2>
 
-            <p className="text-lg text-background/80">
+            <p className="text-sm sm:text-base lg:text-lg text-background/80">
               Sua própria assistência técnica com acompanhamento individualizado para cada equipamento da sua frota.
             </p>
 

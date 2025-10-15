@@ -30,10 +30,10 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contato" className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-foreground mb-6">
+    <section id="contato" className="py-12 sm:py-16 lg:py-20 bg-secondary/30">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4 sm:mb-6">
             Contato
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -41,11 +41,11 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-8 sm:mb-12">
           {contactInfo.map((info, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl p-6 shadow-subtle border border-border"
+              className="bg-card rounded-xl p-5 sm:p-6 shadow-subtle border border-border"
             >
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">

@@ -50,10 +50,10 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-secondary/30">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-foreground mb-6">
+    <section id="servicos" className="py-12 sm:py-16 lg:py-20 bg-secondary/30">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4 sm:mb-6">
             Serviços
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -61,13 +61,13 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl p-8 shadow-subtle hover:shadow-medium transition-all duration-300 border border-border"
+              className="bg-card rounded-xl p-6 sm:p-8 shadow-subtle hover:shadow-medium transition-all duration-300 border border-border"
             >
-              <div className="flex items-start gap-6">
+              <div className="flex items-start gap-4 sm:gap-6">
                 <div className="w-14 h-14 bg-gradient-primary rounded-lg flex items-center justify-center flex-shrink-0">
                   <service.icon className="w-7 h-7 text-primary-foreground" />
                 </div>

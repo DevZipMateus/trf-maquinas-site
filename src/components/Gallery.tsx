@@ -48,13 +48,13 @@ const Gallery = () => {
 
   return (
     <>
-      <section id="galeria" className="py-20 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="font-display font-bold text-4xl md:text-5xl text-foreground mb-6">
+      <section id="galeria" className="py-12 sm:py-16 lg:py-20 bg-muted/50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
+            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4 sm:mb-6">
               Nossa galeria
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-base sm:text-lg text-muted-foreground">
               Conheça nosso trabalho e estrutura especializada em máquinas pesadas
             </p>
           </div>
@@ -74,9 +74,9 @@ const Gallery = () => {
               ]}
               className="w-full"
             >
-              <CarouselContent>
+              <CarouselContent className="-ml-2 sm:-ml-4">
                 {images.map((image, index) => (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem key={index} className="pl-2 sm:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
                     <div className="p-1">
                       <Card className="overflow-hidden cursor-pointer hover:shadow-medium transition-shadow">
                         <CardContent 
@@ -94,15 +94,15 @@ const Gallery = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className="hidden sm:flex" />
+              <CarouselNext className="hidden sm:flex" />
             </Carousel>
           </div>
         </div>
       </section>
 
       <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-        <DialogContent className="max-w-7xl w-full p-0 border-0">
+        <DialogContent className="max-w-[95vw] sm:max-w-7xl w-full p-2 sm:p-4 border-0">
           {selectedImage && (
             <img
               src={selectedImage}

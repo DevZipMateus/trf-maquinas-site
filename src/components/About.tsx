@@ -27,10 +27,10 @@ const About = () => {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-foreground mb-6">
+    <section id="sobre" className="py-12 sm:py-16 lg:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4 sm:mb-6">
             Sobre a TRF
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -39,11 +39,11 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12 lg:mb-16">
           {values.map((value, index) => (
             <div
               key={index}
-              className="bg-card rounded-lg p-8 shadow-subtle hover:shadow-medium transition-all duration-300 border border-border group"
+              className="bg-card rounded-lg p-6 sm:p-8 shadow-subtle hover:shadow-medium transition-all duration-300 border border-border group"
             >
               <div className="w-16 h-16 bg-gradient-primary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <value.icon className="w-8 h-8 text-primary-foreground" />
@@ -58,11 +58,11 @@ const About = () => {
           ))}
         </div>
 
-        <div className="bg-primary/5 rounded-2xl p-8 md:p-12">
-          <h3 className="font-display font-semibold text-2xl text-foreground mb-8 text-center">
+        <div className="bg-primary/5 rounded-2xl p-6 sm:p-8 lg:p-12">
+          <h3 className="font-display font-semibold text-xl sm:text-2xl text-foreground mb-6 sm:mb-8 text-center">
             Por que escolher a TRF?
           </h3>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
             {highlights.map((highlight, index) => (
               <div key={index} className="flex items-start gap-4">
                 <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
