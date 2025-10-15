@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="text-background space-y-6 animate-fade-in">
+          <div className="text-background space-y-6 animate-fade-in bg-black/60 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
             <div className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm px-4 py-2 rounded-full border border-background/20">
               <Wrench className="w-4 h-4" />
               <span className="text-sm font-medium">Assistência técnica especializada</span>
