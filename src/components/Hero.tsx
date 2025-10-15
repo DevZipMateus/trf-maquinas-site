@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wrench } from "lucide-react";
 import logo from "@/assets/logo.jpg";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -14,12 +15,14 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden pt-20">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, currentColor 35px, currentColor 36px)`,
-        }}></div>
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
+        {/* Dark Overlay for text readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
