@@ -41,7 +41,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-8 sm:mb-12">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-8 sm:mb-12">
           {contactInfo.map((info, index) => (
             <div
               key={index}
