@@ -89,7 +89,7 @@ const Contact = () => {
               className="gap-2"
             >
               <Phone className="w-5 h-5" />
-              Fale conosco no WhatsApp
+              FALE COM NOSSO TIME TRF
             </a>
           </Button>
 
