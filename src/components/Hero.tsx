@@ -68,7 +68,7 @@ const Hero = () => {
           </div>
 
           {/* Logo Display */}
-          <div className="hidden lg:flex items-center justify-center">
+          <div className="hidden md:flex items-center justify-center">
             <div className="relative">
               <div className="absolute inset-0 bg-accent/20 blur-3xl rounded-full"></div>
               <img

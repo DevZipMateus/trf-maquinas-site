@@ -76,7 +76,7 @@ const Gallery = () => {
             >
               <CarouselContent className="-ml-2 sm:-ml-4">
                 {images.map((image, index) => (
-                  <CarouselItem key={index} className="pl-2 sm:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
+                  <CarouselItem key={index} className="pl-2 sm:pl-4 basis-full sm:basis-1/2 md:basis-1/3">
                     <div className="p-1">
                       <Card className="overflow-hidden cursor-pointer hover:shadow-medium transition-shadow">
                         <CardContent 
