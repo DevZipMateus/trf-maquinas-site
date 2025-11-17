@@ -62,8 +62,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        display: ["Rajdhani", "sans-serif"],
+        sans: ["Oswald", "sans-serif"],
+        display: ["Orbitron", "sans-serif"],
       },
       backgroundImage: {
         "gradient-primary": "var(--gradient-primary)",
