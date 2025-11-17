@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wrench } from "lucide-react";
 import logo from "@/assets/logo.jpg";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "@/assets/volvo-excavator-hero.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
