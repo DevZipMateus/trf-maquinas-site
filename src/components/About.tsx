@@ -20,6 +20,7 @@ const About = () => {
   ];
 
   const highlights = [
+    "Mais de 25 anos de experiência em máquinas pesadas",
     "13 anos de experiência em autorizadas Volvo e Caterpillar",
     "Atendimento personalizado para cada cliente e equipamento",
     "Acompanhamento individualizado de toda a frota",
