@@ -48,7 +48,7 @@ const Gallery = () => {
 
   return (
     <>
-      <section id="galeria" className="py-12 sm:py-16 lg:py-20 bg-muted/50">
+      <section id="galeria" className="py-12 sm:py-16 lg:py-20 bg-muted/50 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4 sm:mb-6">
