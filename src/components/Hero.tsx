@@ -53,7 +53,7 @@ const Hero = () => {
                 onClick={() => scrollToSection("contato")}
                 className="group"
               >
-                Solicitar orçamento
+                Solicite agendamento
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
               
