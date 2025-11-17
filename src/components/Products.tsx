@@ -1,4 +1,5 @@
-import { Package, Gauge, Cog } from "lucide-react";
+import { Package, Gauge, Cog, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Products = () => {
   const products = [
@@ -9,8 +10,9 @@ const Products = () => {
     },
     {
       icon: Gauge,
-      title: "Calibragem de transmissão",
-      description: "Calibragem precisa e ajustes técnicos para otimizar o desempenho da transmissão",
+      title: "Consulta para compra e venda de seminovos",
+      description: "Realizamos análise técnica na compra ou venda do seminovo.",
+      hasWhatsApp: true,
     },
     {
       icon: Cog,
@@ -43,9 +45,31 @@ const Products = () => {
               <h3 className="font-display font-semibold text-xl text-foreground mb-3">
                 {product.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed mb-4">
                 {product.description}
               </p>
+              {product.hasWhatsApp && (
+                <div className="mt-4">
+                  <p className="text-muted-foreground text-sm mb-3">
+                    Precisa comprar ou vender um equipamento?
+                  </p>
+                  <Button
+                    variant="whatsapp"
+                    size="sm"
+                    className="w-full"
+                    asChild
+                  >
+                    <a
+                      href="https://wa.me/5569993177060"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <MessageCircle className="w-4 h-4 mr-2" />
+                      Chamar no WhatsApp
+                    </a>
+                  </Button>
+                </div>
+              )}
             </div>
           ))}
         </div>
