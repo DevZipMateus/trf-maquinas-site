@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="text-background space-y-4 sm:space-y-6 animate-fade-in bg-black/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10">
             <div className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm px-4 py-2 rounded-full border border-background/20">
               <Wrench className="w-4 h-4" />
-              <span className="text-sm font-medium">Assistência técnica especializada</span>
+              <span className="text-sm font-medium">ASSISTÊNCIA TÉCNICA ESPECIALIZADA</span>
             </div>
             
             <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight">
