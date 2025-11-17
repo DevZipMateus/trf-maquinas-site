@@ -48,7 +48,7 @@ const Header = () => {
             <img
               src="/favicon.jpg"
               alt="TRF MÁQUINAS PESADAS logo"
-              className="h-12 w-auto transition-transform group-hover:scale-105"
+              className="h-12 w-12 object-cover rounded-full transition-transform group-hover:scale-105"
             />
             <span className="font-display font-bold text-xl text-primary hidden sm:block">
               TRF
