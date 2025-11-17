@@ -18,8 +18,8 @@ const Hero = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
+        className="absolute inset-0 bg-cover bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})`, backgroundPosition: 'center 60%' }}
       >
         {/* Dark Overlay for text readability */}
         <div className="absolute inset-0 bg-black/50"></div>
@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
-          <div className="text-background space-y-4 sm:space-y-6 animate-fade-in bg-black/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10">
+          <div className="text-background space-y-4 sm:space-y-6 animate-fade-in bg-black/60 backdrop-blur-sm p-6 sm:p-8 lg:p-10 rounded-2xl border border-white/10">
             <div className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm px-4 py-2 rounded-full border border-background/20">
               <Wrench className="w-4 h-4" />
               <span className="text-sm font-medium">ASSISTÊNCIA TÉCNICA ESPECIALIZADA</span>
